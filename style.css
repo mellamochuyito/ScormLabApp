@@ -1,0 +1,119 @@
+*{padding: 0;}
+body {
+    background-color: #fafafa;
+    background-attachment: fixed;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: center;
+}
+
+header{
+   
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#contenedor {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgb(255, 0, 0);
+    border-radius: 3px;
+    border: 0px;
+}
+
+nav ul li {
+    background-color: rgb(255, 0, 0,0.5);
+    border: 0;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    height: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 100px;
+}
+
+figure {
+    position: fixed;
+    
+}
+
+hgroup {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0;
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: georgia;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;     
+}
+
+.content {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.71);
+    border-radius: 5px;
+}
+
+article {
+    background-image: url(img/squinasupizq.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 150px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo h1::first-letter{
+    color:#f00;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px white;
+}
+.imgholder {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgholder img{
+    width: 95%;
+}

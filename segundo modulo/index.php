@@ -10,12 +10,13 @@
 <body>
 <div>
 	titulo de practica<input type="text" id="titulo">
-	agregar un nuevo modulo <button onclick="newmod()">modulo nuevo</button>
+	
 	
 
 	<br>
 	<br>
 	<span id="dataflux"></span>
+	agregar un nuevo modulo <button onclick="newmod()">modulo nuevo</button>
 </div>
 </body>
 </html>

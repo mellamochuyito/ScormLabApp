@@ -4,20 +4,26 @@ function newmod(){
 	$.ajax({
 		url: "appendedform.txt",
 		success: function (data){
-			contmodules++;
-			$('#dataflux').append("<div id='mod"+contmodules+"'style='background-color:#ddd;'><button onclick='createcontentpage(getparentname(this))'>textpage</button> <button onclick='createquestionpage(getparentname(this))'>question page</button> </div><br>");	
+			
+			$('#dataflux').append("<div id='mod"+contmodules+"'class='modulos'><button onclick='createcontentpage(getparentname(this))'>textpage</button> <button onclick='createquestionpage(getparentname(this))'>question page</button> </div><br>");	
 			$("#mod"+contmodules).focus();
+			contmodules++;
 		}
 	});
 }
 
-
 function createcontentpage(parent){
-	$("#"+parent).html("<h1>Fierro parienton!!</h1>");
+	contmodulesdata++;
+	$("#"+parent).html("");
+	$("#"+parent).append('<h2>modulo'+contmodules+'</h2>');
+	$("#"+parent).append('titulo del texto a insertar<input type="text" id="title'+contmodules+'"><br>');
+	
+	$("#"+parent).append('<textarea name="hola" id="datauser'+contmodulesdata+'" placeholder="Escriba Aqui" cols="90" rows="10"></textarea>');
+	//$("#"+parent).append("<script>alert('HOLA!!!')</script>");
 }
 
 function createquestionpage(parent){
-	
+		
 }
 
 function getparentname(elemento){

@@ -23,7 +23,14 @@ function createcontentpage(parent){
 }
 
 function createquestionpage(parent){
-		
+	$("#"+parent).html("");
+	$("#"+parent).append('<h2>modulo'+contmodules+'</h2>');
+	$("#"+parent).append('<h3>tipo de pregunta</h3>');	
+	$("#"+parent).append('<button onclick="typeofquestion(1)">Multiple</button>');	
+	$("#"+parent).append('<button onclick="typeofquestion(2)">Cierto/Falso</button>');	
+	$("#"+parent).append('<button onclick="typeofquestion(3)">Numerica<	/button>');	
+	
+
 }
 
 function getparentname(elemento){
